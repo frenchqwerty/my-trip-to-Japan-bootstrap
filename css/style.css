@@ -1,0 +1,47 @@
+.carousel-item  {
+    height: 100%;
+}
+
+.img1 {
+    background-image: url('/img/img-slider-1.jpg');
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.img2 {
+    background-image: url('/img/img-slider-2.jpg');
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+p {
+    font-size: 20px;
+}
+
+.hello {
+    margin-top: 2em;
+}
+
+.text {
+    margin-top: 2em;
+}
+ .img-text {
+     margin-top: 2em;
+ }
+
+ .adventure {
+     margin-bottom: 8em;
+ }
