@@ -7,6 +7,7 @@
     <title>Mon voyage au Japon</title>
     <link href="/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="/css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -48,7 +49,7 @@
             <h4>Yassir JABBARI</h4>
             <h5>Étudiant à EPITECH promo 2020</h5>
             <p class="hello">Salut ! 😁</p>
-            <p>Je suis passioné par le voyage, découvrir des nouveaux horizons, partir à l'aventure...</p>
+            <p>Je suis passionné par le voyage, découvrir des nouveaux horizons, partir à l'aventure...</p>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -66,7 +67,41 @@
                     <a class="dropdown-item">Pays-Bas</a>
                     <a class="dropdown-item">Monaco ? 😳</a>
                 </div>
-                <a class="btn btn-dark active" role="button">Mes réseaux sociaux</a>
+                <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modal">
+                    Mes réseaux sociaux
+                </button>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal"
+                     aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Mes réseaux sociaux</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="network-wrapper">
+                                    <a href="https://twitter.com/FrenChQWerTy">
+                                        <i class="fa fa-twitter fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/frenchqwerty/?hl=fr">
+                                        <i class="fa fa-instagram fa-3x"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/yassirjabbari/">
+                                        <i class="fa fa-linkedin fa-3x"></i>
+                                    </a>
+                                    <a href="https://github.com/frenchqwerty">
+                                        <i class="fa fa-github fa-3x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-sm-12 text">
@@ -310,12 +345,26 @@
         </div>
     </div>
 </div>
-
+<a id="button"></a>
 <script src="/js/jquery-3.3.1.min.js"></script>
 <script src="/js/bootstrap.bundle.min.js"></script>
 <script>
     $('#carousel').carousel({
         interval: 2500
+    });
+    let btn = $('#button');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, '300');
     });
 </script>
 </body>
