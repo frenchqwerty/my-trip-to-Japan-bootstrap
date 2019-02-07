@@ -87,3 +87,19 @@ p {
     display: flex;
     justify-content: space-around;
 }
+
+.conclusion {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.footer {
+    height: 10em;
+    background: black;
+    width: 100%;
+}
+
+.text-footer {
+    color: white;
+    text-align: center;
+}
