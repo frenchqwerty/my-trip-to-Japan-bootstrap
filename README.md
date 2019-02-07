@@ -1,2 +1,2 @@
 # my-trip-to-Japan-bootstrap
-Simple website with bootsrap
+Simple website using bootsrap
