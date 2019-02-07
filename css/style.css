@@ -94,12 +94,11 @@ p {
 }
 
 .footer {
-    height: 10em;
+    height: 5em;
     background: black;
     width: 100%;
 }
 
 .text-footer {
     color: white;
-    text-align: center;
 }
